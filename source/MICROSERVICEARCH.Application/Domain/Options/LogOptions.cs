@@ -1,4 +1,4 @@
-﻿namespace MICROSERVICEARCH.Domain.Options;
+﻿namespace MICROSERVICEARCH.Application.Domain.Options;
 
 public sealed record LogOptions : BaseOptions
 {

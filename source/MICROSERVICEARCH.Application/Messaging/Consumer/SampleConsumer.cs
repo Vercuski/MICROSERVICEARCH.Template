@@ -1,11 +1,6 @@
 ﻿using MassTransit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MICROSERVICEARCH.Messaging.Consumer
+namespace MICROSERVICEARCH.Application.Messaging.Consumer
 {
     public class SampleConsumer<T> : IConsumer<T> where T : class
     {
