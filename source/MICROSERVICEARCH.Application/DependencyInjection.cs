@@ -41,6 +41,8 @@ public static class DependencyInjection
 
         builder.Services.AddMassTransit(setup =>
         {
+            var prefix = $"MICROSERVICEARCH.";
+            setup.SetEndpointNameFormatter(new DefaultEndpointNameFormatter(prefix: prefix, includeNamespace: false));
             setup.UsingRabbitMq((context, config) =>
             {
                 config.Host(rabbitMQOptions.Host, rabbitMQOptions.VirtualHost, h =>

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  microservicearch.application:
+    image: ${DOCKER_REGISTRY-}MICROSERVICEARCHapplication
+    build:
+      context: .
+      dockerfile: MICROSERVICEARCH.Application/Dockerfile
