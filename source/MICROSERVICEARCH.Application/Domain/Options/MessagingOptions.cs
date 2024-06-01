@@ -1,6 +1,6 @@
 ﻿namespace MICROSERVICEARCH.Application.Domain.Options;
 
-public sealed record MessagingOptions : BaseOptions
+public sealed record MessagingOptions : BaseOptionsConfig
 {
     public string Host { get; set; } = null!;
     public string VirtualHost { get; set; } = null!;

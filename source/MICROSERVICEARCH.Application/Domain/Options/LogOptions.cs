@@ -1,12 +1,12 @@
 ﻿namespace MICROSERVICEARCH.Application.Domain.Options;
 
-public sealed record LogOptions : BaseOptions
+public sealed record LogOptions : BaseOptionsConfig
 {
     public LogLevel LogLevel { get; set; } = null!;
     public override string Section => "Logging";
 }
 
-public sealed record LogLevel : BaseOptions
+public sealed record LogLevel : BaseOptionsConfig
 {
     public string Default { get; set; } = null!;
     public string MicrosoftAspNetCore { get; set; } = null!;

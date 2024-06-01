@@ -1,6 +1,6 @@
 ﻿namespace MICROSERVICEARCH.Application.Domain.Options;
 
-public abstract record BaseOptions
+public abstract record BaseOptionsConfig
 {
     public abstract string Section { get; }
 }

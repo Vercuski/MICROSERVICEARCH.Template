@@ -27,10 +27,10 @@ public static class DependencyInjection
 
 
     private static IConfigurationSection GetSection<T>(ConfigurationManager configuration)
-        where T : BaseOptions
+        where T : BaseOptionsConfig
     {
         var config = Activator.CreateInstance(typeof(T))!;
-        var section = ((BaseOptions)config).Section;
+        var section = ((BaseOptionsConfig)config).Section;
         return configuration.GetSection(section);
     }
 
