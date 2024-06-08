@@ -3,7 +3,7 @@
 namespace MICROSERVICEARCH.Application.Domain.Abstractions;
 
 [ExcludeFromCodeCoverage]
-public abstract class Entity : IEntity
+public abstract record Entity : IEntity
 {
     //private readonly List<DomainEvents> _domainEvents = new();
 

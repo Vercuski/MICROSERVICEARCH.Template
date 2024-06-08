@@ -15,7 +15,7 @@ public class DomainArchitectureTests
         var result = Types
             .InAssembly(DomainAssembly)
             .That()
-            .ResideInNamespace("ONIONARCH.Domain.Entities")
+            .ResideInNamespace("MICROSERVICEARCH.Application.Domain.Entities")
             .Should()
             .Inherit(typeof(Entity))
             .And()
